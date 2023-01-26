@@ -1,0 +1,64 @@
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-primary: rgb(246, 246, 246);
+  --white: white;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+.sidebar {
+  border-right: 1px solid gainsboro;
+}
+
+.linkItem:hover {
+  background-color: gray;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-1-4 {
+  grid-template-columns: 1fr 4fr;
+}
+.grid-5-4 {
+  grid-template-columns: 5fr 4fr;
+}
+
+.avatar-large {
+  width: 60px;
+  height: 60px;
+}
+.avatar-small {
+  width: 40px;
+  height: 40px;
+}
+.circle {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.box {
+}
+i {
+  cursor: pointer;
+}

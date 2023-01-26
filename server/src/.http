@@ -1,0 +1,99 @@
+POST   http://localhost:4000/api/v1/register
+Content-Type: application/json
+
+{
+  "username": "dog3",
+  "password": "123456" 
+}
+
+####
+POST   http://localhost:4000/api/v1/login
+Content-Type: application/json
+
+{
+  "username": "dog",
+  "password": "123456" 
+}
+
+###
+GET   http://localhost:4000/api/v1/follower/63b81faff2c0856f5a8c15ea
+Content-Type: application/json
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+
+
+###
+GET   http://localhost:4000/api/v1/following/63b81faff2c0856f5a8c15ea
+Content-Type: application/json
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+
+
+###
+PUT   http://localhost:4000/api/v1/follow/63b81faff2c0856f5a8c15ea
+Content-Type: application/json
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+
+
+{
+  "id": "63b828e3871ad2c256999e9b"
+}
+
+###
+POST    http://localhost:4000/api/v1/post/new
+Content-Type: application/json
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+
+
+{
+  "userId":"63b81faff2c0856f5a8c15ea",
+  "description":"Hom nay troi dep qua"
+}
+
+
+####
+PUT     http://localhost:4000/api/v1/post/like/63b935a4976cb73af1b77add
+Content-Type: application/json
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+
+
+{
+  "userLike":"63b8298c30f9344285f8a379"
+}
+
+####
+GET      http://localhost:4000/api/v1/post
+Content-Type: application/json
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+
+####
+DELETE     http://localhost:4000/api/v1/post/delete/634426a133ec15fb5f561322
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+Content-Type: application/json
+
+
+
+###
+POST    http://localhost:4000/api/v1/comment/new
+Content-Type: application/json
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+
+
+{
+  "userId":"63b81faff2c0856f5a8c15ea",
+  "text":"Hom nay troi dep qua",
+  "postId":"6344269a33ec15fb5f561314"
+}
+###
+DELETE     http://localhost:4000/api/v1/comment/delete/63b9410a98305db3628e5607
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+Content-Type: application/json
+
+
+###
+GET      http://localhost:4000/api/v1/comment/63c2653110c4e18f315b2196
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRvZyIsInBhc3N3b3JkIjoiMTIzNDU2IiwiaWF0IjoxNjczMDgzMjM4fQ.D8AOBGkP5EO8zAlKbfXtUKbT5rN7BhTH2SKwquoizz4
+Content-Type: application/json
+
+####
+GET      http://localhost:4000/api/v1/stranger/63b81faff2c0856f5a8c15ea
+Content-Type: application/json
+

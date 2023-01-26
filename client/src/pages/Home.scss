@@ -1,0 +1,23 @@
+.home {
+  background-color: var(--background-primary);
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+}
+.home::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.story__item {
+  text-align: center;
+  list-style: none;
+}
+
+.post__image {
+  width: 100%;
+}

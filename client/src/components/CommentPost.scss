@@ -1,0 +1,44 @@
+.comment {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: absolute;
+  background-color: white;
+  width: 70%;
+  height: 70vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cancel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+}
+
+.post__right {
+  height: 100%;
+}
+
+.comment__list {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.comment__list::-webkit-scrollbar {
+  background-color: transparent;
+}
